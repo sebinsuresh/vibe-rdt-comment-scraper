@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit-scraper"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["websocket-client>=1.6"]
+
+[tool.setuptools]
+package-dir = {"reddit_scraper" = "src"}
+packages = ["reddit_scraper"]
+
+[tool.setuptools.package-data]
+reddit_scraper = ["js/*.js"]
